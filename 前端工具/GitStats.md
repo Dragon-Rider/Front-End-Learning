@@ -16,5 +16,8 @@ GitStats是代码仓库统计工具，[官网地址](http://gitstats.sourceforge
     ./gitstats 你的项目的位置 生成统计的文件夹位置  //使用方式
 </pre>
 
+效果图:
+![GitStats效果截屏](./img/GitStats效果截屏.png)
+
 
 参考文档：[git代码统计](https://segmentfault.com/a/1190000008542123)
