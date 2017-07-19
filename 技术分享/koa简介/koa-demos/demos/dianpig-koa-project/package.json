@@ -1,0 +1,24 @@
+{
+  "name": "dianpig-koa-project",
+  "version": "0.1.0",
+  "description": "node server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "keywords": [
+    "node server"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@dp/node-server": "^1.4.5",
+    "co": "^4.6.0",
+    "@dp/account-filter": "^1.0.1",
+    "@dp/raider-ajax":"^1.0.0"
+  }
+}
