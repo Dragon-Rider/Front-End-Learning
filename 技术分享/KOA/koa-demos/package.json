@@ -1,0 +1,21 @@
+{
+  "name": "koa-demos",
+  "version": "1.0.0",
+  "description": "my koa demos",
+  "main": "hello-koa.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EragonJiang",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.3.0"
+  },
+  "devDependencies": {
+    "co": "^4.6.0",
+    "keygrip": "^1.0.1",
+    "koa-router": "^7.2.1",
+    "koa-session": "^5.4.0",
+    "koa-views": "^6.0.2"
+  }
+}
