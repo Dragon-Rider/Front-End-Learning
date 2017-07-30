@@ -10,8 +10,7 @@
     - [未完成][前后端分离](41)
     - [Callback, Promise, Generator, Async前端异步的前世今生](42)
     - [未完成][KOA简介](43)
-- PWA简介
-    - [PWA简介](44)
+- [PWA简介](44)
 
 ## 前端工具
 - [GitStats](21): `代码统计工具`
