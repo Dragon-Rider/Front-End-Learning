@@ -9,10 +9,10 @@ PWA全称为Progressive Web App，是一个利用现代浏览器的能力来达�
 
 在不丢失 web 的开放灵魂，在不需要依靠 Hybrid 把应用放在 App Store 的前提下，让 web 应用能够渐进式地跳脱出浏览器的标签，变成用户眼中的 App。这是 Alex Russell 在 2015 年提出 PWA 概念的原委。
 
-<center>
+<div align="center">
     <img src="../../img/技术分享/PWA1.png"/>
-<center>
-<center><font color=grey>目前常见的技术选型</font></center>
+    <p style="color: grey">目前常见的技术选型</p>
+</div>
 
 #### 特性概览
 
@@ -23,6 +23,7 @@ PWA全称为Progressive Web App，是一个利用现代浏览器的能力来达�
 **Offline （离线能力）**：离线和弱网环境也能秒开，依赖Service Worker作为代理。
 
 **Re-engageable**： 再次触达用户，目前主要就是推送通知的能力。推送通知依赖Service Worker与HTTP Push，Google默认支持GCM(Google Cloud Messaging)。
+
 
 <center style="width: 70%; margin: 0 auto;"> ![PWA的特性](../../img/技术分享/PWA2.jpeg) </center>
 <center><font color=grey>PWA的特性</font></center>
