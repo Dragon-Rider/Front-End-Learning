@@ -67,11 +67,11 @@ title: {{ site.name }}
 
 参数 | 描述 
 ----|------
-function(total,currentValue, index,arr) | 必需。用于执行每个数组元素的函数。 
-                                        | total：必需。初始值, 或者计算结束后的返回值。 
-                                        | currentValue：必需。当前元素。
-                                        | currentIndex：可选。当前元素的索引。
-                                        | arr：可选。当前元素所属的数组对象。                            
+function(total,currentValue, index,arr)   | 必需。用于执行每个数组元素的函数。 
+空                                        | total：必需。初始值, 或者计算结束后的返回值。 
+空                                        | currentValue：必需。当前元素。
+空                                        | currentIndex：可选。当前元素的索引。
+空                                        | arr：可选。当前元素所属的数组对象。                            
 initialValue | 可选。如果指定 initialValue，则它将用作初始值来启动累积。第一次调用 callbackfn 函数会将此值作为参数而非数组值提供。
 
 注意：reduce不会改变原数组；
