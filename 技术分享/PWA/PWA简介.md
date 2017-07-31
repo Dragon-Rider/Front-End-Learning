@@ -128,7 +128,10 @@ Service Worker的消息推送功能在国内无法使用。由于网络长城的
 
 
 MDN的解释：  
-*The service worker also has to subscribe to the push messaging service. Each session is given its own unique endpoint when it subscribes to the push messaging service. This endpoint is obtained from the (PushSubscription.endpoint) property on the subscription object. This endpoint can be sent to your server and used to send a message to that session's active service worker. Each browser has its own push messaging server to handle sending the push message.*
+
+*
+The service worker also has to subscribe to the push messaging service. Each session is given its own unique endpoint when it subscribes to the push messaging service. This endpoint is obtained from the (PushSubscription.endpoint) property on the subscription object. This endpoint can be sent to your server and used to send a message to that session's active service worker. **Each browser has its own push messaging server to handle sending the push message.**
+*
 
 每个浏览器使用它们自己的消息推送服务器用来处理消息推送。
 
@@ -139,6 +142,14 @@ PWA 作为一个涵盖性术语，与过往的这些或多或少通过私有平�
 
 ### 6. 国内例子
 “饿了么”的m站：[https://h5.ele.me/msite/](https://h5.ele.me/msite/)，可断网体验。
+
+生产环境部署PWA: 从保持业务稳定的基本原则出发，「提供 降级方案 、 错误监控 以及 数据统计 」才是在生产环境部署 PWA 的第一步。
+
+正所谓「能力越大，责任越大」，由于 Service Worker （以下简称SW）直接在浏览器网络层工作，SW 内的 bug 很容易被放大：
+
+1. 由于 SW 缓存策略的作用，页面代码里的 bug 会被缓存，不能及时修复。
+2. 如果 SW 缓存策略有 bug，用户可能无法更新页面，而开发者对此不易察觉。
+3. SW 的错误可能导致所有页面无法工作，对业务造成的影响往往是灾难性的。
 
 #### 参考文档:
 + [下一代 Web 应用模型 — Progressive Web App](https://zhuanlan.zhihu.com/p/25167289)
