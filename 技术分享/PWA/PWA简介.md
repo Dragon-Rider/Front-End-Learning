@@ -24,17 +24,20 @@ PWA全称为Progressive Web App，是一个利用现代浏览器的能力来达�
 
 **Re-engageable**： 再次触达用户，目前主要就是推送通知的能力。推送通知依赖Service Worker与HTTP Push，Google默认支持GCM(Google Cloud Messaging)。
 
-
-<center style="width: 70%; margin: 0 auto;"> ![PWA的特性](../../img/技术分享/PWA2.jpeg) </center>
-<center><font color=grey>PWA的特性</font></center>
+<div style="width: 70%; margin: 0 auto;">
+    <img src="../../img/技术分享/PWA2.jpeg"/>
+    <p style="color: grey">PWA的特性</p>
+</div>
 
 其中Service Worker起到了关键的作用，那么什么是Service Worker？
 
 ### 2. Service Worker
 简单来说，Service Worker 是一个可编程的 Web Worker，它就像一个位于浏览器与网络之间的客户端代理，可以拦截、处理、响应流经的 HTTP 请求；配合随之引入 Cache Storage API，你可以自由管理 HTTP 请求。而文件粒度的缓存，使得 Service Worker 可以从缓存中向 web 应用提供资源，即使是在离线的环境下。
 
-![Service Worker工作模式](../../img/技术分享/PWA3.png)
-<center><font color=grey>Service Worker工作模式</font></center>
+<div>
+    <img src="../../img/技术分享/PWA3.png"/>
+    <p style="color: grey">Service Worker工作模式</p>
+</div>
 
 浏览器厂商对Service Worker的支持情况：
 
@@ -44,8 +47,10 @@ PWA全称为Progressive Web App，是一个利用现代浏览器的能力来达�
 
 Service Worker 第一次发布于 2014 年的 Google IO 上，目前已处于 W3C 工作草案的状态。各家厂商的最新支持情况可[查看](https://jakearchibald.github.io/isserviceworkerready/) 
 
-<center style="width: 70%; margin: 0 auto;">![Service Worker工作模式](../../img/技术分享/PWA4.png)</center>
-<center><font color=grey>Service Worker当前的支持情况</font></center>
+<div style="width: 70%; margin: 0 auto;">
+    <img src="../../img/技术分享/PWA4.png"/>
+    <p style="color: grey">Service Worker当前的支持情况</p>
+</div>
 
 ### 3. Service Worker的应用
 
@@ -100,8 +105,11 @@ Service Worker 第一次发布于 2014 年的 Google IO 上，目前已处于 W3
 
 chrome查看当前启动的Service Worker：[chrome://inspect/#service-workers](chrome://inspect/#service-workers)
 
-<center style="width: 70%; margin: 0 auto;">![Service Worker的生命周期](../../img/技术分享/PWA5.png)</center>
-<center><font color=grey>Service Worker的生命周期</font></center>
+<div style="width: 70%; margin: 0 auto;">
+    <img src="../../img/技术分享/PWA5.png"/>
+    <p style="color: grey">Service Worker的生命周期</p>
+</div>
+
 Service worker拥有一个完全独立于Web页面的生命周期。
 
 要让一个Service Worker在你的网站上生效，你需要先在你的网页中注册它。注册一个Service Worker之后，浏览器会在后台默默启动一个Service Worker的安装过程。
