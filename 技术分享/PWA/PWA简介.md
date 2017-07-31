@@ -10,7 +10,7 @@ PWA全称为Progressive Web App，是一个利用现代浏览器的能力来达�
 在不丢失 web 的开放灵魂，在不需要依靠 Hybrid 把应用放在 App Store 的前提下，让 web 应用能够渐进式地跳脱出浏览器的标签，变成用户眼中的 App。这是 Alex Russell 在 2015 年提出 PWA 概念的原委。
 
 <div align="center">
-    <img src="../../img/技术分享/PWA1.png"/>
+    <img width="70%" src="../../img/技术分享/PWA1.png"/>
     <p style="color: grey">目前常见的技术选型</p>
 </div>
 
@@ -24,8 +24,8 @@ PWA全称为Progressive Web App，是一个利用现代浏览器的能力来达�
 
 **Re-engageable**： 再次触达用户，目前主要就是推送通知的能力。推送通知依赖Service Worker与HTTP Push，Google默认支持GCM(Google Cloud Messaging)。
 
-<div style="width: 70%; margin: 0 auto;">
-    <img src="../../img/技术分享/PWA2.jpeg"/>
+<div align="center">
+    <img width="70%"" src="../../img/技术分享/PWA2.jpeg"/>
     <p style="color: grey">PWA的特性</p>
 </div>
 
@@ -34,7 +34,7 @@ PWA全称为Progressive Web App，是一个利用现代浏览器的能力来达�
 ### 2. Service Worker
 简单来说，Service Worker 是一个可编程的 Web Worker，它就像一个位于浏览器与网络之间的客户端代理，可以拦截、处理、响应流经的 HTTP 请求；配合随之引入 Cache Storage API，你可以自由管理 HTTP 请求。而文件粒度的缓存，使得 Service Worker 可以从缓存中向 web 应用提供资源，即使是在离线的环境下。
 
-<div>
+<div align="center">
     <img src="../../img/技术分享/PWA3.png"/>
     <p style="color: grey">Service Worker工作模式</p>
 </div>
@@ -47,8 +47,8 @@ PWA全称为Progressive Web App，是一个利用现代浏览器的能力来达�
 
 Service Worker 第一次发布于 2014 年的 Google IO 上，目前已处于 W3C 工作草案的状态。各家厂商的最新支持情况可[查看](https://jakearchibald.github.io/isserviceworkerready/) 
 
-<div style="width: 70%; margin: 0 auto;">
-    <img src="../../img/技术分享/PWA4.png"/>
+<div align="center">
+    <img width="70%" src="../../img/技术分享/PWA4.png"/>
     <p style="color: grey">Service Worker当前的支持情况</p>
 </div>
 
@@ -105,8 +105,8 @@ Service Worker 第一次发布于 2014 年的 Google IO 上，目前已处于 W3
 
 chrome查看当前启动的Service Worker：[chrome://inspect/#service-workers](chrome://inspect/#service-workers)
 
-<div style="width: 70%; margin: 0 auto;">
-    <img src="../../img/技术分享/PWA5.png"/>
+<div align="center">
+    <img width="70%" src="../../img/技术分享/PWA5.png"/>
     <p style="color: grey">Service Worker的生命周期</p>
 </div>
 
