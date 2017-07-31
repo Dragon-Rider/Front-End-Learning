@@ -10,7 +10,7 @@ PWA全称为Progressive Web App，是一个利用现代浏览器的能力来达�
 在不丢失 web 的开放灵魂，在不需要依靠 Hybrid 把应用放在 App Store 的前提下，让 web 应用能够渐进式地跳脱出浏览器的标签，变成用户眼中的 App。这是 Alex Russell 在 2015 年提出 PWA 概念的原委。
 
 <center>
-    <img src="https://raw.githubusercontent.com/Dragon-Rider/Front-End-Learning/blob/master/img/技术分享/PWA1.png?raw=true"/>
+    <img src="../../img/技术分享/PWA1.png"/>
 <center>
 <center><font color=grey>目前常见的技术选型</font></center>
 
