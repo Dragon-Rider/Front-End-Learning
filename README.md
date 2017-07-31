@@ -40,4 +40,4 @@
 
 [62]: ./框架以及规范/Redux.md
 
-[81]: ./前端基础/slice,splice,split and others.md
+[81]: ./前端基础/slice,splice,splitAndOthers.md
