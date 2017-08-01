@@ -2,8 +2,13 @@
 这个仓库记载着我的学习历程，我会常更，督促自己不断的学习，不断的努力。
 
 ## 读书笔记
-- 图解HTTP `简单基础的HTTP初学指南，4星`
-    - [<图解HTTP>学习笔记][1]
+- 图解HTTP `4星，简单基础的HTTP初学指南，易懂易读`
+    - [<图解HTTP>学习笔记][100]
+
+- EMCAScript 6入门 `3星，详细介绍了ES6，可以当做字典类的工具书，但是有的地方写的比较晦涩不是很好理解`  
+<pre>
+    [<图解HTTP>学习笔记][101] | [22章Module的语法][102]
+</pre>
 
 ## 技术分享
 - KOA
@@ -29,7 +34,6 @@
 - [slice, splice, split and others][81] 
 
 
-[1]: ./读书笔记/<图解HTTP>学习笔记.md
 
 [21]: ./前端工具/GitStats.md
 [22]: ./前端工具/jscpd.md
@@ -41,3 +45,7 @@
 [62]: ./框架以及规范/Redux.md
 
 [81]: ./前端基础/slice,splice,splitAndOthers.md
+
+[100]: ./读书笔记/<图解HTTP>学习笔记.md
+[101]: ./读书笔记/EMCAScript%206入门/<EMCAScript%206入门>学习笔记.md
+[102]: ./读书笔记/EMCAScript%206入门/<EMCAScript%206入门>22章Module的语法.md
