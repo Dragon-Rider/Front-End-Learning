@@ -1,5 +1,3 @@
-* Note: http://es6.ruanyifeng.com/#docs/
-
 # Module 的语法
 
 ### 22.3 export 命令
@@ -42,3 +40,4 @@
     // 下面两行都是不允许的
     circle.foo = 'hello';
     circle.area = function () {};
+
