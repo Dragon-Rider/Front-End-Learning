@@ -15,8 +15,10 @@
 - [计划中][eslint][24]: `代码规范检查工具`
 
 ## 框架以及规范
-- [计划中][React Diff解析][61] 
-- [书写中][Redux][62] 
+- [计划中]React
+    -[React Diff解析][61] 
+    -[时间旅行][62]
+- [书写中][Redux][65] 
 
 ## 编程思想
 - [计划中][函数式编程][63] 
@@ -35,10 +37,10 @@
 [22]: ./前端工具/jscpd.md
 
 [41]: ./技术分享/KOA/前后端分离.md
-[42]: ./技术分享/KOA/前端异步的逐渐进化.md
+[42]: ./技术分享/KOA/Callback,20%Promise,20%Generator,20%Async——前端异步编程的前世今生.md
 [44]: ./技术分享/PWA/PWA简介.md
 
-[62]: ./框架以及规范/Redux.md
+[65]: ./框架以及规范/Redux.md
 
 [81]: ./前端基础/slice,splice,splitAndOthers.md
 
