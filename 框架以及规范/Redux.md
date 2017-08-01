@@ -110,9 +110,11 @@ Reducer 函数最重要的特征是，它是一个纯函数。也就是说，只
 
 
 
+
 <!-- ![前后端分离结构图](../../img/技术分享/koa1.png) -->
 #### 参考文档
 + [Redux 入门教程（一）：基本用法](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)
++ [Redux 入门教程（二）：中间件与异步操作](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_two_async_operations.html)
 + [深入理解React、Redux](http://www.jianshu.com/p/0e42799be566) *(感觉看懂了又感觉没看懂，囧)*
 
 
