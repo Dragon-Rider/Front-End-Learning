@@ -8,7 +8,7 @@ title: {{ site.name }}
 过去在Windows系统下开发时，一直使用Fiddle进行抓包。现在换Mac后逐渐使用Charles抓包，首先从Charles官网[下载地址](https://www.charlesproxy.com/download/)下载安装。
 
 这里简单介绍几种Charles的调试技巧:
-###1. 用本地文件替换线上文件
+### 1. 用本地文件替换线上文件
 ***
 1.1 首先需要Chrome安装SwitchySharp插件并配置Charles代理，这样Chrome下的链接才会走Charles发送。
 <div align="center">
@@ -58,11 +58,11 @@ title: {{ site.name }}
     <p style="color: grey">图7 文件替换成功效果图</p>
 </div>
 
-###2. 使用Charles抓手机的包
+### 2. 使用Charles抓手机的包
 ***
 2.1 使用Charles调试过程，打开Charles后，Help的Local IP Address 可以看到本机的IP地址。在iPhone上的wifi手动设置服务器地址为mac的ip地址，端口号为8888. 然后在Charles的工具栏上打开Recording按钮，在用手机访问页面即可以抓包。
 
-###3. 使用Charles抓包https协议下的请求
+### 3. 使用Charles抓包https协议下的请求
 ***
 
 
