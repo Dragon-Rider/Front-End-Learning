@@ -11,8 +11,11 @@
 ## 前端工具
 - [GitStats][21]: `代码统计工具`
 - [jscpd][22]: `代码查重工具`
+- [Charles][25]: `Mac上抓包工具`
 - [计划中][webpack][23]: `前端打包工具`
 - [计划中][eslint][24]: `代码规范检查工具`
+
+- [计划中][Jenkins][26]: `持续集成工具，用于监控持续重复的工作`
 
 ## 框架以及规范
 - [计划中]React
@@ -32,9 +35,11 @@
 
 ## 前端基础
 - [slice, splice, split and others][81] 
+- [书写中][Git使用相关][82] 
 
 [21]: ./前端工具/GitStats.md
 [22]: ./前端工具/jscpd.md
+[25]: ./前端工具/Charles.md
 
 [41]: ./技术分享/KOA/前后端分离.md
 [42]: ./技术分享/KOA/Callback,20%Promise,20%Generator,20%Async——前端异步编程的前世今生.md
