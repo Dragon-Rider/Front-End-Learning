@@ -10,5 +10,5 @@ title: {{ site.name }}
 ### 1. Commit之后重新修改Commit Message的内容
     git commit --amend -m "the new message" 
 
-####参考文档
+#### 参考文档
 - [How to rename commit messages in Git?](https://stackoverflow.com/questions/10748749/how-to-rename-commit-messages-in-git)

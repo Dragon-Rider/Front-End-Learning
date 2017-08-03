@@ -33,7 +33,7 @@ title: {{ site.name }}
 1.3 单个文件的替换。选择Tools——Map local将线上文件映射到本地文件, 点击选择要替换的文件(例如：mm-order-list.*.js)。注意protocal可以选择为空，这样就可以匹配https和http两种。  
 `注意：webpack打包的项目可能还需要根据实际情况映射manifest.*.js和common.*.js才可以完成替换。`
 <div align="center">
-    <img width="70%" src="../img/前端工具/Charles5.png"/>
+    <img width="80%" src="../img/前端工具/Charles5.png"/>
     <p style="color: grey">图4 Charles替换单个文件配置</p>
 </div>
 
