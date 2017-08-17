@@ -70,3 +70,4 @@ title: {{ site.name }}
 #### 参考文档：  
 + [前端开发调试工具Charles使用](https://jingyan.baidu.com/article/cbf0e5009a5e292eab289364.html)  
 + [使用代理软件Charles替换远程文件进行本地调试](http://www.wlo-o.com/archives/363/)
++ （Charles 电脑证书和手机证书的原理补充一下, 因为会不停弹出被监控，所以补充下如何删除证书）[Charles https抓包 — Android](https://wiki.sankuai.com/pages/viewpage.action?pageId=664420154)
