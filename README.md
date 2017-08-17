@@ -4,8 +4,11 @@
 ## 技术分享
 - KOA
     - [前后端分离][41]
+
+<!-- 
     - [书写中][Callback, Promise, Generator, Async前端异步的前世今生][42]
     - [计划中][KOA简介][43]
+-->
 - [PWA简介][44]
 
 ## 前端工具
@@ -49,7 +52,7 @@
 [26]: ./前端工具/Git少用语法备忘.md
 
 [41]: ./技术分享/KOA/前后端分离.md
-[42]: ./技术分享/KOA/Callback,20%Promise,20%Generator,20%Async——前端异步编程的前世今生.md
+[42]: ./技术分享/KOA/Callback%2C%20Promise%2C%20Generator%2C%20Async——前端异步编程的前世今生.md
 [44]: ./技术分享/PWA/PWA简介.md
 
 [65]: ./框架以及规范/Redux.md
