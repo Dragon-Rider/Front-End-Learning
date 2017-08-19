@@ -19,4 +19,4 @@ title: {{ site.name }}
 
 #### 参考文档
 + [八段代码彻底掌握 Promise](https://juejin.im/post/597724c26fb9a06bb75260e8?utm_source=gold_browser_extension)
-
++ (未看的)[Co源码以及与Koa的深入理解](http://www.nodepeixun.com/a/nodekuangjia/20170216/156.html)
