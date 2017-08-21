@@ -14,6 +14,10 @@ title: {{ site.name }}
 
 前后端分离
 
+memos
+1. koa-router 7版本不支持generator的写法了，5和7不兼容
+2. koa-ejs  render不能收入router里面，否则会报错this.render is undefined,render()应该是在外面由render绑到this上面去的，具体可以看koa-router的语法
+
 ![前后端分离结构图](../../img/技术分享/koa1.png)
 
 
