@@ -68,9 +68,10 @@ title: {{ site.name }}
 ```
 这一部分会详细写完移上去的
 ios安装charles:http://www.jianshu.com/p/235bc6c3ca77
-ios安装后unknown解决：https://segmentfault.com/q/1010000009188854
+
 日常使用：https://jingyan.baidu.com/article/cbf0e5009a5e292eab289364.html
 安卓安装charles:Charles https抓包 — Android（这里需要拿到美团谢敏的授权）
+ios安装后unknown解决(抓https的包的问题)：https://segmentfault.com/q/1010000009188854
 ```
 
 #### 参考文档：  
