@@ -30,12 +30,12 @@ title: {{ site.name }}
 这里可以绘制图表比较三者关系，参考下面的文档。(待补充~~)
 
 ### 5. git删除本地和远程分支
-删除远程分支：
+远程分支删除：
 ```bash
     $ git push origin --delete <branchName>
 ```
 
-删除本地分支：
+本地分支删除：
 ```bash
     $ git branch -d <branchName>
 ```
