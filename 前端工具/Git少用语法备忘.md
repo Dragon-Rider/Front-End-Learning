@@ -29,13 +29,25 @@ title: {{ site.name }}
 ```
 这里可以绘制图表比较三者关系，参考下面的文档。(待补充~~)
 
-### 5. git垃圾回收机制
+### 5. git删除本地和远程分支
+删除远程分支：
+```bash
+    $ git push origin --delete <branchName>
+```
+
+删除本地分支：
+```bash
+    $ git branch -d <branchName>
+```
+
+
+### 6. git垃圾回收机制
 ```bash
     $ git gc
 ```
 在大的仓库中, git靠压缩历史信息来节约磁盘和内存空间，压缩操作并不是自动进行的, 你需要手动执行 git gc。压缩操作比较耗时, 你运行git gc命令最好是在你没有其它工作的时候。
 
-### 6. git默认编辑器修改
+### 7. git默认编辑器修改
 ```bash
     $ git config --global core.editor "editor -w"
 ```
