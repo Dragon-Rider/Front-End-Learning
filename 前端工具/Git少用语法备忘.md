@@ -40,7 +40,6 @@ title: {{ site.name }}
     $ git branch -d <branchName>
 ```
 
-
 ### 6. git垃圾回收机制
 ```bash
     $ git gc
@@ -55,8 +54,8 @@ title: {{ site.name }}
 
 
 ## 参考文档
----
 - [How to rename commit messages in Git?](https://stackoverflow.com/questions/10748749/how-to-rename-commit-messages-in-git)
 - [git merge和git rebase小结](http://blog.csdn.net/wh_19910525/article/details/7554489)
 - [维护Git(git gc)](http://gitbook.liuhui998.com/4_10.html)
 - [git merge --no-ff是什么意思](https://segmentfault.com/q/1010000002477106)
+- [Git查看、删除、重命名远程分支和tag](https://blog.zengrong.net/post/1746.html)
