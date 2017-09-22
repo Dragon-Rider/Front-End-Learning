@@ -26,7 +26,7 @@ title: {{ site.name }}
 ```bash
     $ git rebase dev        //将dev分支合并到当前分支，并且删除dev分支，确保只有一条分支流
     $ git merge --no-ff dev //将dev分支合并到当前分支(不使用fast-forward方式), 将多分支在流图里都展现
-    $ git merge dev         //将dev分支合并到当前分支(使用fast-forward方式), 如果更新了新分支后，原分支没有改动，则修改会合入原分支
+    $ git merge dev         //将dev分支合并到当前分支(使用fast-forward方式), 如果更新了新分支后，原分支没有改动，则修改会合入原分支, 同rebase效果一样。
 ```
 这里可以绘制图表比较三者关系，参考下面的文档，写的很清楚。  
 - [git merge和git rebase小结](http://blog.csdn.net/wh_19910525/article/details/7554489)  
