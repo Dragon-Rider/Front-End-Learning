@@ -44,6 +44,9 @@
 - EMCAScript 6入门[101] `3星，字典类的工具书，但是有的地方写的比较晦涩，不好理解`  
     - [22章Module的语法][102] | 
 
+- 深入浅出React和Redux[103] ``  
+    - [][102] | 
+
 ## 前端基础
 - [slice, splice, split and others][81] 
 
@@ -64,3 +67,4 @@
 [100]: ./读书笔记/<图解HTTP>学习笔记.md
 [101]: ./读书笔记/EMCAScript%206入门/<EMCAScript%206入门>学习笔记.md
 [102]: ./读书笔记/EMCAScript%206入门/22章Module的语法.md
+[103]: ./读书笔记/<深入浅出React和Redux>学习笔记.md
