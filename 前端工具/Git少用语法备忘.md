@@ -61,3 +61,4 @@ title: {{ site.name }}
 - [How to rename commit messages in Git?](https://stackoverflow.com/questions/10748749/how-to-rename-commit-messages-in-git)
 - [维护Git(git gc)](http://gitbook.liuhui998.com/4_10.html)
 - [Git查看、删除、重命名远程分支和tag](https://blog.zengrong.net/post/1746.html)
+- [为什么你应该停止使用 Git rebase 命令](https://zhuanlan.zhihu.com/p/29682134?group_id=900676029545332736)
