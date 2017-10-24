@@ -118,7 +118,8 @@ IPhone的抓 HTTPS 的包，网上配置很多，这里就不详细介绍了，�
     <img width="70%" src="../img/前端工具/Charles3.1.png"/>
     <p style="color: grey">图3.1 通Charles筛选特定域下的请求</p>
 </div>
-#### 参考文档：  
+
+## 参考文档：  
 + [Iphone安装charles](http://www.jianshu.com/p/235bc6c3ca77)
 + [Charles抓取https时一直显示unknown](https://segmentfault.com/q/1010000009188854)
 + [Charles https抓包 — Android](https://wiki.sankuai.com/pages/viewpage.action?pageId=664420154)
