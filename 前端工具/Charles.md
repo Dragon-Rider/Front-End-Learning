@@ -15,7 +15,7 @@ a、首先需要Chrome安装SwitchySharp插件并配置Charles代理，这样Chr
 <div align="center">
     <img width="70%" src="../img/前端工具/Charles1.png"/>
     <p style="color: grey">图1 SwitchySharp插件配置</p>
-    <img src="../img/前端工具/Charles1.2.png"/>
+    <img width="70%" src="http://pic1.zhimg.com/v2-4b4f5316851d6eb11a9ce2f12a4bd178_b.jpg"/>
     <p style="color: grey">图2 记得要切换到Charlse链接</p>
 </div>
 
