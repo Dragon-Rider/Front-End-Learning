@@ -77,7 +77,7 @@ b、设置 Rewrite Settings，这里需要分成两步：
     <img width="70%" src="../img/前端工具/Charles2.2.2.png"/>
     <p style="color: grey">图10 线上环境产生的跨域问题</p>
 </div>
-**所以需要对dpfile.com域下的Response Header添加字段**，允许跨域：Access-Control-Allow-Credentials: true 和 Access-Control-Allow-Origin: *，从而允许dpfile.com域下的文件被引用，如图11所示：
+**所以需要对dpfile.com域下的Response Header添加字段**：Access-Control-Allow-Credentials: true 和 Access-Control-Allow-Origin: *，从而允许dpfile.com域下的文件被其他域所引用，如图11所示：
 
 <div align="center">
     <img width="70%" src="../img/前端工具/Charles2.2.3.png"/>
@@ -93,22 +93,60 @@ b、设置 Rewrite Settings，这里需要分成两步：
 
 ### 2.2 使用Charles抓https的请求包
 ***
-#### 2.2.1 Iphone抓包
-IPhone的抓 HTTPS 的包，网上配置很多，这里就不详细介绍了，附网络教程供大家参考：[ios安装charles](http://www.jianshu.com/p/235bc6c3ca77)
-```
-补充：按以上操作设置后，如果Iphone抓取https请求包时显示Unknown，如图12所示。则还需要按照此步骤设置：通用 —> 关于本机 —> 证书信任设置 —> CA勾选。
-```
+#### 2.2.1 Iphone抓https包
+IPhone的抓 HTTPS 的包，网上配置很多，这里就不详细介绍了，附网络教程供大家参考：[ios安装charles](http://www.jianshu.com/p/235bc6c3ca77)  
+
+**补充两点技巧：**
+
++ 技巧1：按以上操作设置后，如果Iphone抓取https请求包时显示Unknown，如图12所示。则还需要按照此步骤设置：通用 —> 关于本机 —> 证书信任设置 —> CA勾选。
+
 <div align="center">
     <img width="70%" src="../img/前端工具/Charles12.png"/>
     <p style="color: grey">图12 https请求Unknown</p>
 </div>
 
-#### 2.2.2 安卓手机抓包
-```
++ 技巧2：针对"SSL Proxying Settings"，如果不想每个域名都设置一次，可以直接把Host和Port都设为*，允许所有域名抓包。如图13所示：
 
+<div align="center">
+    <img width="70%" src="../img/前端工具/Charles13.png"/>
+    <p style="color: grey">图13 允许抓取所有SSL代理的数据包</p>
+</div>
 
-安卓安装charles:Charles https抓包 — Android（这里需要拿到美团谢敏的授权）
-```
+#### 2.2.2 安卓手机抓https包
+安卓的手机抓包与IOS相似，都需要按照以下4步来抓https的包：   
+
+1. 电脑装证书  
+2. 移动设备安装证书  
+3. Charlse添加SSL Proxying  
+4. 手机使用Mac代理访问目标域名  
+
+**补充两种安装失败情况及解决办法**
+
++ 情况1：若遇到在模拟器/手机的浏览器中输入[http://charlesproxy.com/getssl](http://charlesproxy.com/getssl) 不是弹一个框，而是出现了图14情况，可能是因为手机没有将电脑的IP地址设为代理(端口号为8888)
+
+<div align="center">
+    <img width="60%" src="../img/前端工具/Charles14.png"/>
+    <p style="color: grey">图14 未将手机设置代理即访问getssl链接</p>
+</div>
+
++ 情况2：小米手机安装证书提示“没有可安装的证书”，解决方式：  
+
+a、打开Charles的HELP -> SSL Proxying -> Export Charles Root Certification and Private Key，输入任意密码，导出pem文件。
+
+<div align="center">
+    <img width="70%" src="../img/前端工具/Charles15.png"/>
+    <p style="color: grey">图15 Charles导出Pem文件安装证书</p>
+</div>
+
+b、导出后，用微信或者其他方式传到安卓手机里，在WLAN设置，安装证书里打开这个文件，输入导出时设置的密码就行了（比如通过微信方式的路径为 WLAN->高级设置->安装证书->Tencent文件夹->MicroMsg文件夹->Download文件夹）
+
+<div align="center">
+    <img width="50%" src="../img/前端工具/Charles17.png"/>
+    <p style="color: grey">图16 小米手机安装证书</p>
+</div>
+
+***Charles原理解析***  
+Charles抓包安装的证书，电脑和手机是配对的。不管是通过访问[http://charlesproxy.com/getssl](http://charlesproxy.com/getssl) (*因为Mac已经代理，所以访问这个地址实际上返回的本机的Charles证书，并没有访问charlesproxy.com这个网站*) 还是通过手动安装，实际上安装的都是对应本机的 SSL 证书。所以如果安装证书的手机和电脑不是配对关系的话，即使两者都有证书也是不能抓包的。
 
 ## 三、其他
 ### 3.1. Charles筛选特定域下的请求
@@ -122,6 +160,4 @@ IPhone的抓 HTTPS 的包，网上配置很多，这里就不详细介绍了，�
 ## 参考文档
 + [Iphone安装charles](http://www.jianshu.com/p/235bc6c3ca77)
 + [Charles抓取https时一直显示unknown](https://segmentfault.com/q/1010000009188854)
-+ [Charles https抓包 — Android](https://wiki.sankuai.com/pages/viewpage.action?pageId=664420154)
-
-（Charles 电脑证书和手机证书的原理补充一下, 因为会不停弹出被监控，所以补充下如何删除证书）
++ [Charles https抓包 — Android —— 美团谢敏](https://wiki.sankuai.com/pages/viewpage.action?pageId=664420154)
