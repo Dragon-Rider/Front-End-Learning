@@ -14,9 +14,9 @@ title: {{ site.name }}
 a、首先需要Chrome安装SwitchySharp插件并配置Charles代理，这样Chrome下的链接才会走Charles发送。
 <div align="center">
     <img width="70%" src="../img/前端工具/Charles2.png"/>
-    <p style="color: grey">图2 SwitchySharp插件配置</p>
+    <p style="color: grey">图1 SwitchySharp插件配置</p>
     <img src="../img/前端工具/Charles3.png"/>
-    <p style="color: grey">图3 记得要切换到Charlse链接</p>
+    <p style="color: grey">图2 记得要切换到Charlse链接</p>
 </div>
 
 b、打开Charles，选择Tools —> No caching Seting，勾选Enable No Caching，确保不用缓存文件。
