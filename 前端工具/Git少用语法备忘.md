@@ -56,6 +56,14 @@ title: {{ site.name }}
     3. update;"
 ```
 
+### 8. git标签
+```bash
+    $ git tag v1.0.1           // 打标签
+    $ git tag                  // 显示所有标签
+    $ git checkout tag         // 切换到某个标签
+    $ git tag -d v1.0.1        // 删除本地tag
+    $ git push origin :v1.0.1  // 删除远程tag
+```
 
 ## 参考文档
 - [How to rename commit messages in Git?](https://stackoverflow.com/questions/10748749/how-to-rename-commit-messages-in-git)
