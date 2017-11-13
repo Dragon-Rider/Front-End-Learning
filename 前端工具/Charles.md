@@ -93,12 +93,13 @@ b、设置 Rewrite Settings，这里需要分成两步：
 
 ### 2.2 使用Charles抓https的请求包
 ***
-#### 2.2.1 Iphone抓https包
-IPhone的抓 HTTPS 的包，网上配置很多，这里就不详细介绍了，附网络教程供大家参考：[ios安装charles](http://www.jianshu.com/p/235bc6c3ca77)  
+#### 2.2.1 iPhone抓https包
+iPhone的抓 HTTPS 的包，网上配置很多，这里就不详细介绍了，附网络教程供大家参考：[ios安装charles](http://www.jianshu.com/p/235bc6c3ca77)  
 
 **补充两点技巧：**
 
-+ 技巧1：按以上操作设置后，如果Iphone抓取https请求包时显示Unknown，如图13所示。则还需要按照此步骤设置：通用 —> 关于本机 —> 证书信任设置 —> CA勾选。
++ 技巧1：按以上操作设置后，如果Iphone抓取https请求包时显示Unknown，如图13所示。   
+则说明Charles的证书在只在本机安装了，但还未选为信任，需要按照此步骤设置：**通用 —> 关于本机 —> 证书信任设置 —> CA勾选**。
 
 <div align="center">
     <img width="70%" src="../img/前端工具/Charles13.png"/>
