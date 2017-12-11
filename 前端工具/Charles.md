@@ -5,10 +5,10 @@ title: {{ site.name }}
 <h1>Mac抓包工具Charles</h1>
 
 + [用本地文件替换线上文件](#用本地文件替换线上文件)
-    - [替换beta上文件（51ping.com）](#替换beta上文件（51ping.com）)
-    - [替换生产环境的文件（跨域dpfile.com）](#替换生产环境的文件（跨域dpfile.com）)
+    - [替换beta上文件](#替换beta上文件)
+    - [替换生产环境的文件](#替换生产环境的文件)
 + [抓手机的请求包](#抓手机的请求包)
-    - [使用Charles抓http的请求包](#使用Charles抓http的请求包)
+    - [2.1使用Charles抓http的请求包](#2.1使用Charles抓http的请求包)
     - [2.2 使用Charles抓https的请求包](#2.2 使用Charles抓https的请求包)
         - [2.2.1 iPhone抓https包](#2.2.1 iPhone抓https包)
         - [2.2.2 安卓手机抓https包](#2.2.2 安卓手机抓https包)
@@ -19,7 +19,7 @@ title: {{ site.name }}
 过去在Windows系统下开发时，一直使用Fiddler进行抓包。现在换Mac后逐渐使用Charles抓包，首先从Charles官网[下载地址](https://www.charlesproxy.com/download/)下载安装。这里简单介绍几种Charles的调试技巧:
 
 ## 用本地文件替换线上文件
-### 替换beta上文件（51ping.com）
+### 替换beta上文件
 ***
 a、首先需要Chrome安装SwitchySharp插件并配置Charles代理，这样Chrome下的链接才会走Charles发送。
 <div align="center">
@@ -70,7 +70,7 @@ e、最后，刷新浏览器，如果Http的Respone Header里有X-Charles-Map-Lo
     <p style="color: grey">图9 文件替换成功效果图</p>
 </div>
 
-### 替换生产环境的文件（跨域dpfile.com）
+### 替换生产环境的文件
 用本地文件替换生产环境的文件同样需要设置 Map Local Settings 和 Rewrite Settings 两项。     
 
 a、设置 Map Local Settings 进行文件目录映射，同图6，只需要把Host改成静态文件存储的域名即可，本例Host为：“www.dpfile.com”
@@ -97,7 +97,7 @@ b、设置 Rewrite Settings，这里需要分成两步：
 按以上配置设置完毕后，即可用本地文件替换生产环境线上文件：）
 
 ## 抓手机的请求包
-### 2.1 使用Charles抓http的请求包
+### 2.1使用Charles抓http的请求包
 ***
 使用Charles调试过程，打开Charles后，Help的Local IP Address 可以看到本机的IP地址（Mac上按住option点击WIFI图标）。在IPhone上的wifi手动设置HTTP代理，服务器地址为电脑的ip地址，端口号为8888. 然后在Charles的工具栏上打开Recording按钮，在用手机访问页面即可以抓包。
 
