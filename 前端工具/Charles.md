@@ -12,7 +12,7 @@ title: {{ site.name }}
     - [2.2 使用Charles抓https的请求包](#2.2 使用Charles抓https的请求包)
         - [2.2.1 iPhone抓https包](#2.2.1 iPhone抓https包)
         - [2.2.2 安卓手机抓https包](#2.2.2 安卓手机抓https包)
-+ [3.其他](#3.其他)
++ [3. 其他](#3. 其他)
     - [3.1. Charles筛选特定域下的请求](#3.1. Charles筛选特定域下的请求)
 + [参考文档](#参考文档)
 
@@ -97,7 +97,7 @@ b、设置 Rewrite Settings，这里需要分成两步：
 按以上配置设置完毕后，即可用本地文件替换生产环境线上文件：）
 
 ## 抓手机的请求包
-### 2.1使用Charles抓http的请求包
+### 使用Charles抓http的请求包
 ***
 使用Charles调试过程，打开Charles后，Help的Local IP Address 可以看到本机的IP地址（Mac上按住option点击WIFI图标）。在IPhone上的wifi手动设置HTTP代理，服务器地址为电脑的ip地址，端口号为8888. 然后在Charles的工具栏上打开Recording按钮，在用手机访问页面即可以抓包。
 
@@ -159,7 +159,7 @@ b、导出后，用微信或者其他方式传到安卓手机里，在WLAN设置
 ***Charles原理解析***  
 Charles抓包安装的证书，电脑和手机是配对的。不管是通过访问[http://charlesproxy.com/getssl](http://charlesproxy.com/getssl) (*因为Mac已经代理，所以访问这个地址实际上返回的本机的Charles证书，并没有访问charlesproxy.com这个网站*) 还是通过手动安装，实际上安装的都是对应本机的 SSL 证书。所以如果安装证书的手机和电脑不是配对关系的话，即使两者都有证书也是不能抓包的。
 
-## 3.其他
+## 3. 其他
 ### 3.1. Charles筛选特定域下的请求
 ***
 由于Charles会抓取手机所有的请求包，为了能快速找到我们需要的请求，可以对Charles的抓包请求进行筛选，具体方法是：Setting —> Recording Setting —> Include，可以设置只展示特定域的请求包。
