@@ -7,8 +7,8 @@ title: {{ site.name }}
 + [用本地文件替换线上文件](#用本地文件替换线上文件)
     - [替换beta上文件（51ping.com）](#替换beta上文件（51ping.com）)
     - [替换生产环境的文件（跨域dpfile.com）](#替换生产环境的文件（跨域dpfile.com）)
-+ [用Charles抓手机的请求包](#用Charles抓手机的请求包)
-    - [2.1 使用Charles抓http的请求包](#2.1 使用Charles抓http的请求包)
++ [抓手机的请求包](#抓手机的请求包)
+    - [使用Charles抓http的请求包](使用Charles抓http的请求包)
     - [2.2 使用Charles抓https的请求包](#2.2 使用Charles抓https的请求包)
         - [2.2.1 iPhone抓https包](#2.2.1 iPhone抓https包)
         - [2.2.2 安卓手机抓https包](#2.2.2 安卓手机抓https包)
@@ -96,7 +96,7 @@ b、设置 Rewrite Settings，这里需要分成两步：
 
 按以上配置设置完毕后，即可用本地文件替换生产环境线上文件：）
 
-## 用Charles抓手机的请求包
+## 抓手机的请求包
 ### 2.1 使用Charles抓http的请求包
 ***
 使用Charles调试过程，打开Charles后，Help的Local IP Address 可以看到本机的IP地址（Mac上按住option点击WIFI图标）。在IPhone上的wifi手动设置HTTP代理，服务器地址为电脑的ip地址，端口号为8888. 然后在Charles的工具栏上打开Recording按钮，在用手机访问页面即可以抓包。
