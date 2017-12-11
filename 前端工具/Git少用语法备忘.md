@@ -49,9 +49,10 @@ title: {{ site.name }}
 ```
 在大的仓库中, git靠压缩历史信息来节约磁盘和内存空间，压缩操作并不是自动进行的, 你需要手动执行 git gc。压缩操作比较耗时, 你运行git gc命令最好是在你没有其它工作的时候。
 
-### 7. git多行注释
+### 7. git多行注释，打出"后即可在bash总换行
 ```bash
-    $ git commit -a -m "1. update;
+    $ git commit -a -m "
+    1. update;
     2. update;
     3. update;"
 ```
