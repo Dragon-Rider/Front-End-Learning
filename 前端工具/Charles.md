@@ -9,9 +9,9 @@ title: {{ site.name }}
     - [替换生产环境的文件](#替换生产环境的文件)
 + [抓手机的请求包](#抓手机的请求包)
     - [抓http的请求包](#抓http的请求包)
-    - [使用Charles抓https的请求包](#2.2 使用Charles抓https的请求包)
-        - [2.2.1 iPhone抓https包](#2.2.1 iPhone抓https包)
-        - [2.2.2 安卓手机抓https包](#2.2.2 安卓手机抓https包)
+    - [抓https的请求包](#抓https的请求包)
+        - [iPhone抓https包](#iPhone抓https包)
+        - [安卓手机抓https包](#安卓手机抓https包)
 + [其他](#其他)
     - [筛选指定域下的请求](#筛选指定域下的请求)
 + [参考文档](#参考文档)
@@ -102,9 +102,9 @@ b、设置 Rewrite Settings，这里需要分成两步：
 ***
 使用Charles调试过程，打开Charles后，Help的Local IP Address 可以看到本机的IP地址（Mac上按住option点击WIFI图标）。在IPhone上的wifi手动设置HTTP代理，服务器地址为电脑的ip地址，端口号为8888. 然后在Charles的工具栏上打开Recording按钮，在用手机访问页面即可以抓包。
 
-### 2.2 使用Charles抓https的请求包
+### 抓https的请求包
 ***
-#### 2.2.1 iPhone抓https包
+#### iPhone抓https包
 iPhone的抓 HTTPS 的包，网上配置很多，这里就不详细介绍了，附网络教程供大家参考：[ios安装charles](http://www.jianshu.com/p/235bc6c3ca77)  
 
 **补充两点技巧：**
@@ -124,7 +124,7 @@ iPhone的抓 HTTPS 的包，网上配置很多，这里就不详细介绍了，�
     <p style="color: grey">图14 允许抓取所有SSL代理的数据包</p>
 </div>
 
-#### 2.2.2 安卓手机抓https包
+#### 安卓手机抓https包
 安卓的手机抓包与IOS相似，都需要按照以下4步来抓https的包：   
 
 1. 电脑装证书  
