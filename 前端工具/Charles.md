@@ -4,7 +4,7 @@ title: {{ site.name }}
 ---
 <h1>Mac抓包工具Charles</h1>
 
-+ [测试](#测试)
++ [用本地文件替换线上文件](#用本地文件替换线上文件)
     - [1.1、替换beta上文件（51ping.com）](#1.1、替换beta上文件（51ping.com）)
     - [1.2、替换生产环境的文件（跨域dpfile.com）](#1.2、替换生产环境的文件（跨域dpfile.com）)
 + [二、用Charles抓手机的请求包](#二、用Charles抓手机的请求包)
@@ -18,7 +18,7 @@ title: {{ site.name }}
 
 过去在Windows系统下开发时，一直使用Fiddler进行抓包。现在换Mac后逐渐使用Charles抓包，首先从Charles官网[下载地址](https://www.charlesproxy.com/download/)下载安装。这里简单介绍几种Charles的调试技巧:
 
-## 测试
+## 用本地文件替换线上文件
 ### 1.1、替换beta上文件（51ping.com）
 ***
 a、首先需要Chrome安装SwitchySharp插件并配置Charles代理，这样Chrome下的链接才会走Charles发送。
