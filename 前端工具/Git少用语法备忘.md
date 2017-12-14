@@ -66,6 +66,17 @@ title: {{ site.name }}
     $ git push origin :v1.0.1  // 删除远程tag
 ```
 
+### 8. .gitignore 失效
+由于gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。
+要解决这个问题，需要先把本地缓存删除（改变成未track状态），然后再提交。
+```bash
+    $ git rm -r --cached .
+    $ git add .
+    $ git commit -m 'commit log info'
+```
+
+
+
 ## 参考文档
 - [How to rename commit messages in Git?](https://stackoverflow.com/questions/10748749/how-to-rename-commit-messages-in-git)
 - [维护Git(git gc)](http://gitbook.liuhui998.com/4_10.html)
