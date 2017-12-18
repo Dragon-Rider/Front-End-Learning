@@ -11,7 +11,7 @@ title: {{ site.name }}
 + [抓手机的请求包](#抓手机的请求包)
     - [抓http的请求包](#抓http的请求包)
     - [抓https的请求包](#抓https的请求包)
-        - [苹果手机抓https包](#苹果手机抓https包)
+        - [iPhone手机抓https包](#iphone手机抓https包)
         - [安卓手机抓https包](#安卓手机抓https包)
 + [其他](#其他)
     - [筛选指定域下的请求](#筛选指定域下的请求)
@@ -105,7 +105,7 @@ b、设置 Rewrite Settings，这里需要分成两步：
 
 ### 抓https的请求包
 ***
-#### 苹果手机抓https包
+#### iPhone手机抓https包
 iPhone的抓 HTTPS 的包，网上配置很多，这里就不详细介绍了，附网络教程供大家参考：[ios安装charles](http://www.jianshu.com/p/235bc6c3ca77)  
 
 **补充两点技巧：**
