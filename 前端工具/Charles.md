@@ -32,7 +32,7 @@ Charles 是一个网络代理工具，经常用来进行Mac下的Web调试，功
 
 打开 Charles 后，在 Help 选项下选择 Local IP Address 可以看到本机的 IP 地址。如果获取的是 IPv6 地址。也可以在Mac上按住 option 键点击WIFI图标获得 IPv4 格式地址。如下图所示：
 <div align="center">
-    <img width="60%" src="../img/前端工具/Cha1.png"/>
+    <img width="60%" src="https://raw.githubusercontent.com/Dragon-Rider/Front-End-Learning/master/img/%E5%89%8D%E7%AB%AF%E5%B7%A5%E5%85%B7/Cha1.png"/>
     <p style="color: grey">获取本机IP地址</p>
 </div>
 
