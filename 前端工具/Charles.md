@@ -1,7 +1,3 @@
----
-layout: default
-title: {{ site.name }}
----
 <h1>Web调试工具Charles使用心得</h1>
 
 ## 目录
@@ -101,7 +97,7 @@ b、导出后，用微信或者其他方式将 pem 文件传到安卓手机里�
 
 **Charles原理解析** 
 
-Charles 抓包安装的证书，电脑和手机是配对的。不管是通过访问 [http://charlesproxy.com/getssl](http://charlesproxy.com/getssl)（因为 Mac 已经开启代理，所以访问这个地址实际上返回的是本机的 Charles 证书，而并没有访问charlesproxy.com这个网站），还是通过手动安装，实际上安装的都是对应本机的 SSL 证书。所以如果安装证书的手机和电脑不是配对关系的话，即使两者都有证书也是不能抓包的。
+Charles 抓包安装的证书，电脑和手机是配对的。不管是通过访问 [http://charlesproxy.com/getssl](http://charlesproxy.com/getssl)（因为 Mac 已经开启代理，所以访问这个地址实际上返回的是本机的 Charles 证书，而并没有访问 charlesproxy.com 这个网站），还是通过手动安装，实际上安装的都是对应本机的 SSL 证书。所以如果安装证书的手机和电脑不是配对关系的话，即使两者都有证书也是不能抓包的。
 
 ## 三、用本地文件替换线上文件
 ### 替换beta上文件
