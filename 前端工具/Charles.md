@@ -168,12 +168,13 @@ b、设置 Rewrite Settings，这里需要分成两步：
     <p style="color: grey">生产环境设置Map Local Settings 文件替换目录</p>
 </div>
 
-第二步，由于 "m.dianping.com" 引用映射后的 "www.dpfile.com" 域下的文件导致跨域问题。
+第二步，由于 m.dianping.com 引用映射后的 www.dpfile.com 域下的文件，从而导致跨域问题。
 <div align="center">
     <img width="70%" src="../img/前端工具/Cha16.png"/>
     <p style="color: grey">生产环境产生的跨域问题</p>
 </div>
-**所以需要对 dpfile.com 域下的 Response Header 添加字段**：Access-Control-Allow-Credentials: true 和 Access-Control-Allow-Origin: *，从而允许 dpfile.com 域下的文件被其他域所引用。
+**所以需要对 dpfile.com 域下的 Response Header 添加字段**
+Access-Control-Allow-Credentials: true 与 Access-Control-Allow-Origin: *，从而允许 dpfile.com 域下的文件被其他域所引用。
 
 <div align="center">
     <img width="70%" src="../img/前端工具/Cha17.png"/>
