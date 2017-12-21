@@ -8,7 +8,7 @@
         - [iPhone手机抓https包](#iphone手机抓https包)
         - [安卓（小米）手机抓https包](#安卓小米手机抓https包)
 + [三、用本地文件替换线上文件](#三用本地文件替换线上文件)
-    - [替换beta上文件](#替换beta上文件)
+    - [替换测试环境的文件](#替换测试环境的文件)
     - [替换生产环境的文件（跨域）](#替换生产环境的文件跨域)
 + [四、其他](#四其他)
     - [筛选指定域下的请求](#筛选指定域下的请求)
@@ -36,12 +36,12 @@ Charles 是一个网络代理工具，经常用来进行 Mac 下的 Web 调试�
     <p style="color: grey">获取本机IP地址</p>
 </div>
 
-在 iPhone 上的 WIFI 手动设置 HTTP 代理，服务器地址为电脑的 IP 地址，端口号为8888。 然后在 Charles 的工具栏上打开 Recording 按钮，用手机浏览器访问页面或打开App，在 Charles 中即可看到 http 请求包。
+在 iPhone 上的 WIFI 手动设置 HTTP 代理，服务器地址为电脑的 IP 地址，端口号为8888。 然后在 Charles 的工具栏上打开 Recording 按钮，用手机浏览器访问页面或打开 App，在 Charles 中即可看到 http 请求包。
 
 ### https请求抓包
 ***
 #### iPhone手机抓https包
-iPhone 抓取 HTTPS 的包，网上配置很多，这里就不详细介绍了，附 [网络教程](http://www.jianshu.com/p/235bc6c3ca77) 供大家参考。
+iPhone 抓取 https 的包，网上配置很多，这里就不详细介绍了，附 [网络教程](http://www.jianshu.com/p/235bc6c3ca77) 供大家参考。
 
 **补充两点技巧：**
 
@@ -100,7 +100,7 @@ b、导出后，用微信或者其他方式将 pem 文件传到安卓手机里�
 Charles 抓包安装的证书，电脑和手机是配对的。不管是通过访问 [http://charlesproxy.com/getssl](http://charlesproxy.com/getssl)（因为 Mac 已经开启代理，所以访问这个地址实际上返回的是本机的 Charles 证书，而并没有访问 charlesproxy.com 这个网站），还是通过手动安装，实际上安装的都是对应本机的 SSL 证书。所以如果安装证书的手机和电脑不是配对关系的话，即使两者都有证书也是不能抓包的。
 
 ## 三、用本地文件替换线上文件
-### 替换beta上文件
+### 替换测试环境的文件
 ***
 a、首先需要 Chrome 安装 SwitchySharp 插件并配置 Charles 代理，这样 Chrome 下的链接才会走 Charles 发送。
 <div align="center">
@@ -145,7 +145,7 @@ d、文件夹整体替换。按照步骤c，我们已经可以进行单文件替
 </div>
 
 e、最后，刷新浏览器，如果 http 请求的 Respone Header 里有 X-Charles-Map-Local 字段则代表本地文件替换成功。  
-   <!-- `注意：如果是 https 链接，需要配置 Charles 支持对应域名的 https 协议才可以生效` -->
+
 <div align="center">
     <img width="70%" src="https://raw.githubusercontent.com/Dragon-Rider/Front-End-Learning/master/img/前端工具/Cha14.png"/>
     <p style="color: grey">文件替换成功效果图</p>
