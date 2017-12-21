@@ -158,23 +158,36 @@ e、最后，刷新浏览器，如果 http 的 Respone Header 里有 X-Charles-M
 a、设置 Map Local Settings 进行文件目录映射，只需要把 Host 改成静态文件存储的域名即可，本例 Host: www.dpfile.com
 
 b、设置 Rewrite Settings，这里需要分成两步：  
+
 第一步，指定替换文件，注意线上的文件因为被压缩过，所以文件名中可能会有 “min” 字段。 
 <div align="center">
     <img width="70%" src="https://raw.githubusercontent.com/Dragon-Rider/Front-End-Learning/master/img/前端工具/Cha15.png"/>
     <p style="color: grey">生产环境设置Map Local Settings 文件替换目录</p>
 </div>
 
-第二步，由于 m.dianping.com 引用映射后的 www.dpfile.com 域下的文件，从而导致跨域问题。
+第二步，由于 m.dianping.com 引用映射后的 www.dpfile.com 域下的文件，从而导致跨域问题。 
+
+请注意这里需要对问题进行区分：
+
+情景一：Response Header 不包含 Access-Control-Allow-Origin 与 Access-Control-Allow-Credentials 字段，则需手动添加两个字段。
 <div align="center">
     <img width="70%" src="https://raw.githubusercontent.com/Dragon-Rider/Front-End-Learning/master/img/前端工具/Cha16.png"/>
     <p style="color: grey">生产环境产生的跨域问题</p>
 </div>
+
 **所以需要对 dpfile.com 域下的 Response Header 添加字段**
 Access-Control-Allow-Credentials: true 与 Access-Control-Allow-Origin: *，从而允许 dpfile.com 域下的文件被其他域所引用。
 
 <div align="center">
     <img width="70%" src="https://raw.githubusercontent.com/Dragon-Rider/Front-End-Learning/master/img/前端工具/Cha17.png"/>
     <p style="color: grey">通过给Response Header添加字段，允许dpfile域下文件被引用</p>
+</div>
+
+情景二：Response Header 如已包含 Access-Control-Allow-Origin 字段，则只需添加 Access-Control-Allow-Credentials。不能再添加 Access-Control-Allow-Origin，否则会报错。
+
+<div align="center">
+    <img width="70%" src="https://raw.githubusercontent.com/Dragon-Rider/Front-End-Learning/master/img/前端工具/Cha19.png"/>
+    <p style="color: grey">Response Header 已有 Access-Control-Allow-Origin 字段，重复添加报错</p>
 </div>
 
 按以上配置设置完毕后，即可用本地文件替换生产环境线上文件：）
